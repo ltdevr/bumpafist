@@ -1,0 +1,57 @@
+.game-name {
+    text-align: center;
+}
+
+.game-name h1{
+    font-size: 50px;
+}
+.game-name h2{
+    margin: 0;
+}
+button{
+    font-weight: bold;
+}
+.start {
+    background: greenyellow;
+    border-radius: 90px;
+}
+.pause {
+    background: rgb(252, 243, 114);
+    border-radius: 90px;
+}
+.end {
+    background: rgb(218, 106, 98);
+    border-radius: 90px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: rgb(78, 69, 204);
+    background-color: aliceblue;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 600px;
+    height: 300px;
+    padding-top: 10%;
+    margin: auto;
+}
+
+.fist {
+    background-image: url('Fistbump1a.png');
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px){
+/* .game-name h1{
+    padding-top: 150%;
+} */
+
+
+}
