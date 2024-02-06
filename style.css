@@ -1,12 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: beige;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 .game-name {
     text-align: center;
 }
 
 .game-name h1{
     font-size: 50px;
+    margin-top: 10%;
+    margin-bottom: 3%;
 }
 .game-name h2{
-    margin: 0;
+    /* margin: 0; */
+    margin-top: 1%;
+}
+.btns {
+    margin-top: 3%;
 }
 button{
     font-weight: bold;
@@ -14,14 +37,36 @@ button{
 .start {
     background: greenyellow;
     border-radius: 90px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .pause {
     background: rgb(252, 243, 114);
     border-radius: 90px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .end {
     background: rgb(218, 106, 98);
     border-radius: 90px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start:hover {
+    background: rgb(67, 107, 7);
+    color: white;
+}
+.pause:hover {
+    background: rgb(163, 153, 7);
+    color: white;
+}
+.end:hover {
+    background: rgb(158, 17, 7);
+    color: white;
 }
 
 .square {
@@ -37,9 +82,10 @@ button{
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    width: 600px;
-    height: 300px;
-    padding-top: 10%;
+    width: 520px;
+    height: 400px;
+    padding-top: 15%;
+    /* padding-top: 10%; */
     margin: auto;
 }
 
@@ -48,10 +94,36 @@ button{
     background-size: cover;
 }
 
+/* For smaller screens */
 @media only screen and (max-width: 600px){
-/* .game-name h1{
-    padding-top: 150%;
-} */
 
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
 
+    .game-name {
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    .game-name h1 {
+        font-size: 50px; /* Adjust the font size for smaller screens */
+        margin-top: 5%;
+    }
+
+    .square {
+        width: 80px; /* Adjust the width for smaller screens */
+        height: 80px; /* Adjust the height for smaller screens */
+    }
+
+    .grid {
+        width: 240px; /* Adjust the width for smaller screens */
+        height: 240px; /* Adjust the height for smaller screens */
+        padding-top: 0; /* Remove padding-top */
+    }
 }
+
+
